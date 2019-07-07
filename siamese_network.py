@@ -12,7 +12,7 @@ class SiameseLSTM(object):
         n_layers=3
         # Prepare data shape to match `static_rnn` function requirements
         x = tf.unstack(tf.transpose(x, perm=[1, 0, 2]))
-        print(x)
+        # print(x)
         # Define lstm cells with tensorflow
         # Forward direction cell
         with tf.name_scope("fw"+scope),tf.variable_scope("fw"+scope):

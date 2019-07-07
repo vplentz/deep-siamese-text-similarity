@@ -26,7 +26,7 @@ tf.flags.DEFINE_string("word2vec_format", "text", "word2vec pre-trained embeddin
 tf.flags.DEFINE_integer("embedding_dim", 300, "Dimensionality of character embedding (default: 300)")
 tf.flags.DEFINE_float("dropout_keep_prob", 1.0, "Dropout keep probability (default: 1.0)")
 tf.flags.DEFINE_float("l2_reg_lambda", 0.0, "L2 regularizaion lambda (default: 0.0)")
-tf.flags.DEFINE_string("training_files", "person_match.train2", "training file (default: None)")  #for sentence semantic similarity use "train_snli.txt"
+tf.flags.DEFINE_string("training_files", "deep-siamese-text-similarity/person_match.train2", "training file (default: None)")  #for sentence semantic similarity use "train_snli.txt"
 tf.flags.DEFINE_integer("hidden_units", 50, "Number of hidden units (default:50)")
 
 # Training parameters
